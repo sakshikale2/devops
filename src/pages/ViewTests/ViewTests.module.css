@@ -1,0 +1,114 @@
+.container {
+  padding: 2rem;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.tableContainer {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  background-color: white;
+  border-collapse: collapse;
+}
+
+.thead {
+  background-color: #2d3748;
+  color: white;
+}
+
+.th {
+  text-align: left;
+  padding: 0.75rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.tbody {
+  color: #4a5568;
+}
+
+.td {
+  padding: 0.75rem;
+}
+
+.buttonContainer {
+  text-align: center; /* Center align all buttons */
+}
+
+.button {
+  background-color: #4299e1;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  font-weight: bold;
+  transition: background-color 0.2s ease-in-out;
+  cursor: pointer;
+  margin: 0.5rem; /* Add some margin to separate buttons */
+}
+
+.regenerateButton {
+  background-color: red; /* Change background color to red for regenerate button */
+}
+
+.button:hover {
+  background-color: #2b6cb0;
+}
+
+.configList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.configItem {
+  margin-bottom: 0.5rem; /* space between items */
+  font-size: 0.875rem; /* smaller font size for readability */
+  color: #4a5568; /* a readable color */
+}
+
+.tdConfig {
+  white-space: normal; /* allows text to wrap */
+}
+
+.table th,
+.table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.table th {
+  position: sticky;
+  top: 0;
+  background-color: #2d3748;
+  color: white;
+}
+
+.table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.table tr {
+  border-bottom: 1px solid #ddd;
+}
+
+.table th:first-child,
+.table td:first-child {
+  border-left: 1px solid #ddd;
+}
+
+.table th:last-child,
+.table td:last-child {
+  border-right: 1px solid #ddd;
+}
+
+

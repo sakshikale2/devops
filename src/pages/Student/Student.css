@@ -1,0 +1,80 @@
+/* Student.css */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f3f4f6; /* Light gray background */
+}
+
+.form-container {
+    max-width: 500px; /* Increased max-width */
+    width: 90%; /* Set width to 90% of the viewport */
+    background-color: #ffffff; /* White background */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+.title {
+    font-size: 24px;
+    color: #333333; /* Dark gray text color */
+    margin-bottom: 20px;
+}
+
+.label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555555; /* Gray text color */
+}
+
+.input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc; /* Light gray border */
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+}
+
+/* Style for the button */
+.button {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    padding: 12px 24px; /* Top and bottom padding, Left and right padding */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    text-align: center; /* Center text */
+    cursor: pointer; /* Pointer cursor on hover */
+    text-decoration: none; /* Remove underline from links */
+    display: inline-block; /* Align button properly */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.button:hover {
+    background-color: #45a049; /* Darker shade of green on hover */
+}
+
+/* Add more space above the Start Test button */
+.button-container {
+    margin-top: 30px; /* Space above the button */
+    text-align: center; /* Center align the button */
+}
+
+.guidelines {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #333;
+}
+
+.guidelines ul {
+    padding-left: 20px;
+}
+
+.guidelines li {
+    margin-bottom: 5px;
+}
+
+/* Add more space above the Start Test button */

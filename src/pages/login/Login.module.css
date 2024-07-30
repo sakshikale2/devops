@@ -1,0 +1,83 @@
+/* Container */
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 2em;
+  text-align: center;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Input Fields */
+input {
+  width: 100%;
+  margin-bottom: 1em;
+  padding: 0.75em;
+  font-size: 1em;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Buttons */
+button {
+  width: 100%;
+  padding: 0.75em;
+  font-size: 1em;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Sign-Up Link */
+.signupLink {
+  margin-top: 1em;
+}
+
+.signupLink p {
+  margin: 0;
+}
+
+.signupLink a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.signupLink a:hover {
+  text-decoration: underline;
+}
+
+/* Headings */
+h2 {
+  color: #333;
+  margin-bottom: 1em;
+}
+
+/* Adding some padding for better visual spacing */
+.container .signupLink {
+  padding-top: 1em;
+  border-top: 1px solid #ddd;
+  margin-top: 1em;
+  width: 100%;
+  text-align: center;
+}

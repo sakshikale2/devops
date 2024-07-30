@@ -1,0 +1,186 @@
+/* General App Styles */
+.App {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full viewport height */
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9; /* Light background for easier reading */
+}
+
+/* Header Styles */
+.top-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #006400; /* Dark green background */
+    color: white; /* White text for contrast */
+    font-size: 20px;
+}
+
+/* Container for quiz panels */
+.hold {
+    display: flex;
+    flex: 1;
+    overflow: hidden; /* Prevents overflow */
+}
+
+/* Left panel for navigation */
+.left-panel {
+    width: 200px; /* Fixed width for consistency */
+    display: flex;
+    flex-direction: column;
+    flex:0 0 15%;
+    background-color: #fff; /* White background */
+    padding: 10px;
+    border-right: 2px solid #ccc; /* Separator */
+}
+
+/* Styles for buttons */
+button {
+    padding: 10px;
+    margin-bottom: 8px;
+    background-color: #32CD32; /* Lime Green */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #228B22; /* Forest Green */
+}
+
+
+/* Student Info Styles */
+.student-info {
+    padding: 10px 20px;
+    background-color: #f0f0f0; /* Very light grey */
+    border-bottom: 1px solid #ccc;
+    font-size: 16px;
+}
+
+/* Middle and right sections */
+.middle-section, .right-panel{
+    flex-grow: 1;
+    padding: 10px;
+    overflow: auto; /* Allow scrolling */
+}
+
+.right-panel {
+    background-color: #fff; /* White background */
+    border-left: 2px solid #ccc; /* Separator */
+    overflow: hidden; 
+    flex:0 0 15%;
+}
+
+/* Text area styles */
+textarea {
+    width: 100%;
+    height: 300px; /* Adequate height */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+    overflow-y: auto;
+    /* Allow only vertical resizing */
+}
+
+/* Text area styles for MCQ section */
+textarea[name="answer-MCQ"] {
+    height: 80%; /* Reduced height */
+}
+
+/* Container for the submit button */
+.button-container {
+    padding: 10px;
+    text-align: center; /* Center the button */
+}
+
+/* Time display */
+.time-remaining {
+    font-size: 16px;
+}
+
+.vertical-layout {
+    flex-grow: 1; /* Takes up all available space */
+    margin-left: 0; /* Ensure no additional margin on the left */
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Adjust the width to take the full container */
+    overflow-y: auto;
+    overflow-x: hidden; /* Enable vertical scrolling */
+    padding: 10px;
+    height: 80%; /* Assuming the left panel is 200px wide */
+}
+
+.vertical-question {
+    width: calc(100% - 20px); /* Subtracting padding from the total width */
+    margin-bottom: 20px;
+    box-sizing: border-box; /* Includes padding and border in the width calculation */
+}
+
+textarea {
+    width: 100%; /* Makes textarea take full width of its parent */
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box; /* Includes padding and border in the width calculation */
+    resize: none; /* Allow resizing only vertically */
+}
+
+.button-container {
+    width: 100%; /* Align width with the above elements */
+    padding: 10px 10px; /* Provide some vertical padding for the button */
+    text-align: center; /* Center the submit button */
+}
+
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.disabled:hover {
+    background-color: inherit;
+    color: inherit;
+}

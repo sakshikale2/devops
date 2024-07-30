@@ -1,0 +1,65 @@
+/* TestPlatform.module.css */
+
+.formContainer {
+    max-width: 600px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+  }
+  
+  .input,
+  .select,
+  .button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box; /* to ensure padding does not affect width */
+  }
+  
+  .button {
+    background-color: #5cb85c; /* A green shade */
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .button:hover {
+    background-color: #4cae4c; /* A darker green shade */
+  }
+  
+  .removeButton {
+    background-color: #d9534f; /* A red shade */
+  }
+  
+  .removeButton:hover {
+    background-color: #c9302c; /* A darker red shade */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .formContainer {
+      padding: 10px;
+    }
+  
+    .title {
+      font-size: 20px;
+    }
+  }
+  
